@@ -1,0 +1,3 @@
+<ul #elements >
+  <li *ngFor="let value of values; let i = index" [ngbTooltip]="value"[disableTooltip]="disableTooltip(i, elements)">{{value}}</li>
+</ul>
