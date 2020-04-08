@@ -1,9 +1,17 @@
-<ul #elements >
-  <li *ngFor="let value of values; let i = index" [ngbTooltip]="value"[disableTooltip]="disableTooltip(i, elements)">{{value}}</li>
+
+<h6>Apply tooltip for all</h6>
+<ul >
+  <li *ngFor="let value of values; let i = index" [ngbTooltip]="value">{{value}}</li>
 </ul>
 
 <hr />
 
-<ul >
-  <li *ngFor="let value of values; let i = index" [ngbTooltip]="value">{{value}}</li>
+<h6>Apply tooltip if there is ellipsis</h6>
+
+<ul #elements >
+  <li *ngFor="let value of values; let i = index" [ngbTooltip]="value"[disableTooltip]="disableTooltip(i, elements)">{{value}}</li>
 </ul>
+
+
+
+
